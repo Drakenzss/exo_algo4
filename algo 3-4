@@ -1,0 +1,303 @@
+1.
+
+algorithme: verication 
+but demande un nombre entre 1 et 3 
+debut l'utilisateur rentre un nombre entre 1 et 3 
+fin l'algorithme trouve le bon chiffre
+
+var nbr : ENTIER
+
+DEBUT
+	ECRIRE "Ecrire un chiffre entre 1 et 3"
+	LIRE nbr
+	TANTQUE nbr<1 ou nbr>3 FAIRE 
+		ECRIRE "Votre chiffre n'est pas correct"
+		ECRIRE "Veuilliez resaissair votre chiffre"
+		LIRE nbr
+	FINTANTQUE
+		ECRIRE "Vous avez entrer le bon chiffre"
+FIN
+	------------------------------------------
+DEBUT
+	REPETER
+		ECRIRE "Entrer un chiffre"
+		LIRE nbr
+	JUSQU A (nbr>=1 et nbr<=3)
+		ECRIRE "le chiffre et bien compris entre 1 et 3"+nbr
+FIN
+
+2.
+
+algorithme: verification guidee
+but demande un nombre entre 10 et 20 
+debut l'utilisateur rentre un nombre entre 10 et 20
+fin l'algorithme trouve le bon chiffre
+
+var nbr: ENTIER
+
+DEBUT
+	REPETER
+		ECRIRE "Entrez un nombre entre 10 et 20"
+		LIRE nbr
+		SI
+			nb<10
+		ALORS
+		ECRIRE "Plus grand"
+		SINON
+		SI
+			nb>20
+		ALORS 
+		ECRIRE "Plus petit"
+		JUSQU A (nbr>=10 et nbr<=20)
+		Ecrire "nombre correct"
+FIN
+
+3.
+
+algorithme: suite
+but trouver le nombre de l'utilisateur
+debut l'utilisateur rentre un nombre 
+fin l'algorithme trouve le bon nombre
+
+var nbr i: ENTIER
+
+DEBUT
+
+ECRIRE "Entrez un nombre"
+LIRE nbr
+	POUR
+		i de 1 a 10
+	FAIRE 
+		ECRIRE nbr+1
+	FINPOUR
+FIN
+
+4.
+
+algorithme: somme
+but calculer la somme 
+debut l'utilisateur rentre un nombre 
+fin l'algorithme trouve la somme
+
+var nbr, somme, i: ENTIER
+
+DEBUT
+	ECRIRE "Ecrire un nombre entier"
+	LIRE nbr
+	POUR i de 1 à nombre 
+	FAIRE
+		pas de 1
+	FAIRE 
+		 somme=somme+i
+	FINPOUR
+FIN
+
+5.
+
+algorithme: factorielle
+but ecrire la factoreille du nombre de depart
+debut l'utilisateur rentre un nombre 
+fin l'algorithme trouve le factorielle
+
+var nbr somme: ENTIER
+
+DEBUT
+	ECRIRE "ecrire un nombre"
+	LIRE nbr
+	POUR 
+		i de 1 a nbr pas de 1
+	FAIRE
+		pas de 1
+		somme=somme*i
+	FINPOUR
+FIN
+
+6.
+
+algorithme: maximum
+but ecrire le nombre le plus grand 
+debut l'utilisateur rentre un nombre 
+fin l'algorithme trouve le nombre le plus grand 
+
+var nbr max i i_max ent_nbr: ENTIER
+
+DEBUT
+	max <--0 
+	POUR 
+		i de 1 a 20 pas de 1
+	FAIRE
+		ECRIRE " Entrez le nombre numéro " i
+		LIRE nbr
+		SI 
+			nbr>max
+		ALORS 
+		max <-- nbr
+		i_max <--i
+		Ecrire ent_nbr
+	FINPOUR
+		ECRIRE "Le nombre le plus haut est" ent_max "à la position" i_max
+FIN
+
+7.
+
+algorithme: maximum 2
+but ecrire le nombre le plus grand 
+debut l'utilisateur rentre un nombre 
+fin l'algorithme trouve le nombre le plus grand 
+
+var nbr grand position i: ENTIER
+
+DEBUT
+	REPETER	
+		ECRIRE " entrez plusieur chiffre"
+		LIRE nbr
+	SI
+		nbr>grand
+	ALORS
+		grand <--nbr
+		position <--i
+		i pas de 1
+	FINSI
+	JUSQU A 
+		nbr=0
+	ECRIRE "le nombre numéro" +position + "est"+grand
+FIN
+
+8.
+
+algorithme: monnaie
+but rendu monnaie
+debut l'utilisateur rentre le prix
+fin l'algorithme rend la monnaie 
+
+var nbr rendu somme monnaie: ENTIER
+
+DEBUT
+	ECRIRE "entrez le prix de l'article"
+	LIRE nbr
+	ECRIRE "quel monnaie vous donnez"
+	Lire monnaie
+	SI
+		nbr<monnaie
+	ALORS
+		ECRIRE "erreur, veuilliez rentrez des nombre cohérent"
+	POUR
+		monnaie>nbr
+	ALORS
+		monnaie-somme 
+	FINPOUR
+	somme <--rendu
+	ECRIRE rendu
+FIN
+
+1.
+
+algorithme: voyage
+but savoir si c'est une ville
+debut l'utilisateur rentre le nombre de ville visitée
+fin l'algorithme dit si c'est une ville ou non
+
+var nbr hab ville: ENTIER
+
+DEBUT
+	ECRIRE "entre le nombre de lieux visité"
+	LIRE nbr
+	ECRIRE "entre le nombre d'habitant"
+	LIRE hab
+		SI
+			hab>10000 
+		ALORS
+			hab=ville
+		POUR
+			ville=nbr+i
+		alors
+			ecrire "le nombre de ville visitée est :"+ ville
+FIN
+
+2.
+
+algorithme: hauberge
+but donner le prix d'une chambre
+debut l'utilisateur donne l'age
+fin l'algorithme donne le prix
+
+var age prix nbr: ENTIER
+
+DEBUT
+	ECRIRE "ecrire le nombre de personne"
+	LIRE nbr
+	ECRIRE "age des personne"
+	LIRE age
+	CASPARMI AGE
+		cas 1 60 ecrire " payez 3 ecus"
+		cas 2 <10 ecrire " payez 30 ecus"
+		cas 3 !=60 et 10 ecrire "40 ecus"
+	FIN CASPARMI
+FIN
+
+3.
+
+algorithme: START TO PLAY
+but savoir si on peut acceuillir des gens
+debut l'utilisateur donne le nombre de personne
+fin salle pleine
+
+var entrée sortie: ENTIER
+
+DEBUT
+	Ecrire" nombre de personne 
+	LIRE entrée 
+	TANTQUE
+		entrée<250
+	ALORS
+		ECRIRE "la salle n'est pas remplie"
+	SI
+		entrée<=0
+	ALORS
+		ECRIRE "la salle est vide"
+	SI
+		sortie=!0 OU sortie!=250
+	ALORS 
+		ECRIRE "la sale n'est pas remplie"
+	FINSI ALORS
+	lire sortie
+FIN
+
+4.
+
+algorithme: triangle
+but faire un triangle
+debut l'utilisateur donne le nombre de ligne et de collone
+fin l'algorithme donne un piramide
+
+var vlt tot rep: ENTIER
+
+DEBUT
+	ECRIRE "entrez le nombre de ligne"
+	LIRE lgn
+	POUR
+		vlt=-1 vlt<tot vlt+i
+	POUR
+		rep=-1 rep<vlt rep+i
+	ECRIRE vlt + rep
+FIN
+
+5.
+
+algorithme: carre
+but faire un carre
+debut l'utilisateur donne la taille du carre
+fin l'algorithme donne un carre
+
+var l i rep : ENTIER
+	car : CHAINE
+
+DEBUT
+	ECRIRE "donnez la largeur du carre"
+	LIRE l
+	POUR
+		l=-1 l=i l+pas 1
+	POUR
+		rep=-1 rep=i rep+pas 1
+	FINPOUR
+	ECRIRE rep+l
